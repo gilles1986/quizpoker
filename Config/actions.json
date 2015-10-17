@@ -1,13 +1,13 @@
 {
 	"main"	: "main",
-	"importData" : "importData",
+	"importData" : "importdata",
     "play" : "play",
-  "editQuestions" : "editQuestions",
-  "addQuestions" : "addQuestions",
-  "editQuestion" : "editQuestion",
-  "doEditQuestion" : "doEditQuestion",
-  "deleteQuestion" :  "deleteQuestion",
-  "doAddQuestion" : "doAddQuestion"
+  "editQuestions" : "editquestions",
+  "addQuestions" : "addquestions",
+  "editQuestion" : "editquestion",
+  "doEditQuestion" : "doeditquestion",
+  "deleteQuestion" :  "deletequestion",
+  "doAddQuestion" : "doaddquestion"
 
 }
 

@@ -1,0 +1,12 @@
+{
+   "controller" : "Quizpoker",
+   "method"		: "deleteQuestion",
+   "validation" : [
+      {
+         "name" : "id",
+         "displayName" : "Fragen Id",
+         "validators" : [
+         ]
+      }
+   ]
+} 

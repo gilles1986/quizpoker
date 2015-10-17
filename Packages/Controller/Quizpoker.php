@@ -70,7 +70,8 @@ class Quizpoker extends TplAbstractController {
     $quiz = new Quiz($this->config['quizDataPath']);
     $request = print_r($this->getRequest(), true);
     Logger::debug("editQuestion: ".$request, "Quizpoker");
-    $this->assign("question", $quiz->getQuestion($this->getRequest()['id']));
+    $question = $this->getRequest();
+    $this->assign("question", $quiz->getQuestion($question['id']));
     $this->view("Quizpoker","editQuestion");
   }
 
@@ -107,8 +108,8 @@ class Quizpoker extends TplAbstractController {
     $quiz = new Quiz($this->config['quizDataPath']);
     $request = print_r($this->getRequest(), true);
     Logger::debug("deleteQuestion: ".$request, "Quizpoker");
-    $id = $this->getRequest()['id'];
-    $quiz->deleteQuestion($id);
+    $question = $this->getRequest();
+    $quiz->deleteQuestion($question['id']);
 
     $quiz->save();
 
