@@ -1,5 +1,0 @@
-{
-   "controller" : "Login",
-   "method"		: "logoutAction",
-   "validation" : []
-} 
