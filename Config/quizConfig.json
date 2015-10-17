@@ -1,4 +1,4 @@
 {
   "importPath" : "F:/importData.txt",
-  "quizDataPath" : "F:/quizData.json"
+  "quizDataPath" : "../Data/quizData.json"
 }

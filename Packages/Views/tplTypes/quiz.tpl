@@ -1,6 +1,7 @@
 <div id="contentWrapper" class="container">
  <div id="content">
- <h1 data-toggle="collapse" aria-controls="collapseNav" data-target="#collapseNav">Quiz Poker</h1><span class="glyphicon glyphicon-refresh break reloadButton"></span>
+ <h1 data-toggle="collapse" aria-controls="collapseNav" data-target="#collapseNav">Quiz Poker</h1>
+     {if $showReload == true}<span class="glyphicon glyphicon-refresh break reloadButton"></span>{/if}
 
   <ul class="nav nav-tabs {$collapseNav}collapse" id="collapseNav" >
     <li><a href="?action=play">Spielen</a></li>

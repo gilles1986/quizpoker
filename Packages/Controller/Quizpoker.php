@@ -52,6 +52,7 @@ class Quizpoker extends TplAbstractController {
     $quiz = new Quiz($this->config['quizDataPath']);
     $this->smarty->assign("question", $quiz->getRandomQuestion());
     $this->smarty->assign("collapseNav", "");
+    $this->smarty->assign("showReload", true);
     $this->view("Quizpoker","play");
   }
 
