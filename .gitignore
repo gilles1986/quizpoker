@@ -1,0 +1,5 @@
+*.iml
+.idea
+Data/Smarty/cached/*
+Data/Smarty/compiled/*
+Data/Log
