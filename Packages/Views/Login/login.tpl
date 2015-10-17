@@ -5,8 +5,9 @@ Das Formular wurde nicht korrekt ausgefüllt
 {foreach $errors as $error}
   <li>{$error}</li>
 {/foreach}
-{/if}
 </ul>
+{/if}
+
 
 <p>{$test}</p>
 

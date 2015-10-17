@@ -3,5 +3,6 @@
  "libs/SiteLoader.js",
  "libs/bootstrap.js",
  "libs/AjaxFormHandler.js",
- "classes/System.js"
+ "classes/System.js",
+ "classes/reloadButton.js"
 ]

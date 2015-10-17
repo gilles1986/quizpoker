@@ -2,7 +2,7 @@
 
 body {
   background-color: #333333;
-  font-size: 1em;
+  font-size: 1.4em;
 
 }
 
@@ -11,12 +11,26 @@ h1 img {
   margin-right: 0.5em;
 }
 
+h1 {
+    color: #261b8d;
+    font-weight: bold;
+
+}
+
+.break {
+    clear: both;
+    float: none;
+}
+.reloadButton {
+    float:right;
+}
+
 a {
   color: #4434b3;
 }
 
 #contentWrapper {
-  width: 95em;
+  width: 88%;
   margin: auto;
   background-color: #e8e8e8;
   margin-top: 2em;
@@ -140,4 +154,14 @@ Eingeloggter Bereich
 .dropdown-toggle:hover i, .dropdown-toggle:focus i {
   background-image: url("../bootstrap/img/glyphicons-halflings-white.png");
 
+}
+
+
+.questionList {
+    list-style-position: outside;
+    list-style: none;
+}
+
+table.questions .question {
+   width: 50%;
 }

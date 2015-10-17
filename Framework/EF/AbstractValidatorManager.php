@@ -122,11 +122,13 @@ abstract class AbstractValidatorManager implements \Framework\EF\ValidatorManage
    * @return	void
    */
   private function validateForm($request) {
+    Logger::debug("Request ist ".print_r($request, true),"ValidatorManager");
     $jsonContent = $this->getJsonContentVar();
     $count = isset($jsonContent['validation']) ? count($jsonContent['validation']) : 0;
     for($i=0; $i < $count; $i++) {
       $this->validateField($jsonContent['validation'][$i], $request);
     }
+    Logger::debug("Request Objekt nach dem validieren: ".print_r($this->getRequest(), true), "ValidatorManager");
   }
 
   /**
@@ -151,7 +153,7 @@ abstract class AbstractValidatorManager implements \Framework\EF\ValidatorManage
     }
 
     $validators = $field['validators'];
-    $value = (empty($request[$field['name']])) ? $field['initValue'] : $request[$field['name']];
+    $value = (!array_key_exists($field['name'],$request)) ? $field['initValue'] : $request[$field['name']];
     $displayName = (empty($field['displayName'])) ? $field['name'] : $field['displayName'];
 
     $valid = true;
@@ -164,10 +166,12 @@ abstract class AbstractValidatorManager implements \Framework\EF\ValidatorManage
       }
 
     }
+
+    Logger::debug("Feld: ".print_r($field, true)." mit dem Wert ".$value." ist valide? '".$valid."'","ValidatorManager");
     // Wenn alle Validationen ok waren, dieses Feld freigeben
     if($valid === true) {
-      $req = $this->getRequest();
-      $req[$field['name']] = $value;
+      $req = $this->setRequestField($field['name'], $value);
+      Logger::debug("Füge Feld '".$field['name']."' mit dem Wert '".$value."' dem request Objekt hinzu","ValidatorManager");
     }
   }
 
@@ -257,6 +261,10 @@ abstract class AbstractValidatorManager implements \Framework\EF\ValidatorManage
    */
   public function getRequest() {
     return $this->request;
+  }
+
+  public function setRequestField($name, $value) {
+    $this->request[$name]= $value;
   }
 
   /**

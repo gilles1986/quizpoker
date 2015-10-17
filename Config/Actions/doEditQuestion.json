@@ -1,0 +1,36 @@
+{
+   "controller" : "Quizpoker",
+   "method"		: "doEditQuestion",
+   "validation" : [
+      {
+         "name" : "id",
+         "displayName" : "Fragen Id",
+         "validators" : [
+         ]
+      },
+      {
+         "name" : "question",
+         "displayName" : "Frage",
+         "validators" : [
+         ]
+      },
+      {
+         "name" : "hint1",
+         "displayName" : "Hinweis 1",
+         "validators" : [
+         ]
+      },
+      {
+         "name" : "hint2",
+         "displayName" :  "Hinweis 2",
+         "validators" : [
+         ]
+      },
+      {
+         "name" : "answer",
+         "displayName" : "Antwort",
+         "validators" : [
+         ]
+      }
+   ]
+} 

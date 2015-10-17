@@ -5,6 +5,22 @@
  * Time: 10:17
  */
 
+
+/**
+ * Aufbau einer Datei die Importiert werden kann
+ *
+ * - Frage Nr 1
+ * - Hinweis 1
+ * - Hinweis 2
+ * - Antwort Nr 1
+ * ##
+ * - Frage Nr 2
+ * - Hinweis 1
+ * - Hinweis 2
+ * - Antwort Nr 2
+ *
+ */
+
 namespace Models;
 
 

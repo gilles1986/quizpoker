@@ -1,6 +1,13 @@
 {
 	"main"	: "main",
-	"importData" : "importData"
-	
+	"importData" : "importData",
+    "play" : "play",
+  "editQuestions" : "editQuestions",
+  "addQuestions" : "addQuestions",
+  "editQuestion" : "editQuestion",
+  "doEditQuestion" : "doEditQuestion",
+  "deleteQuestion" :  "deleteQuestion",
+  "doAddQuestion" : "doAddQuestion"
+
 }
 
